@@ -1,8 +1,9 @@
 package com.insightsystems.dal.DTO;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import org.springframework.lang.Nullable;
 
+
+import javax.annotation.Nullable;
 import java.util.Objects;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)

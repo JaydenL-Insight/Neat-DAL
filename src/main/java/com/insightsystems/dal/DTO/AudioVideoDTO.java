@@ -1,7 +1,7 @@
 package com.insightsystems.dal.DTO;
 
-import org.springframework.lang.NonNull;
-import org.springframework.lang.Nullable;
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 public class AudioVideoDTO {
     @Nullable
@@ -21,7 +21,7 @@ public class AudioVideoDTO {
     public AudioVideoDTO(int autoPairingVolume) {
         this.autoPairingVolume = autoPairingVolume;
     }
-    public AudioVideoDTO(@NonNull String cameraAntiBanding) {
+    public AudioVideoDTO(@Nonnull String cameraAntiBanding) {
         this.cameraAntiBanding = cameraAntiBanding;
     }
     public AudioVideoDTO(boolean musicModeEnabled) {
