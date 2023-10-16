@@ -175,6 +175,7 @@ public class Neat extends RestCommunicator implements Monitorable, Pingable, Con
             stats.put("System#Reboot", "0");
             controls.add(new AdvancedControllableProperty("System#Reboot", new Date(), reboot, "0"));
 
+            extStats.setControllableProperties(controls);
             extStats.setStatistics(stats);
         } finally{
             reentrantLock.unlock();
